@@ -1,0 +1,8 @@
+[
+  {"currentState":"STOPPED,CLOSED", "input":"OPEN", "nextState":"OPENING", "handler":"openHandler"},
+  {"currentState":"OPENING", "input":"OPEN_COMPLETE", "nextState":"OPENED", "handler":"openCompleteHandler"},
+  {"currentState":"OPENED", "input":"CLOSE", "nextState":"CLOSING", "handler":"closeHandler"},
+  {"currentState":"CLOSING", "input":"CLOSE_COMPLETE", "nextState":"CLOSED", "handler":"closeCompleteHandler"},
+  {"currentState":"CLOSED", "input":"RUN", "nextState":"RUNNING", "handler":"runHandler"},
+  {"currentState":"RUNNING", "input":"STOP", "nextState":"STOPPED", "handler":"stopHandler"}
+]
